@@ -1,0 +1,9 @@
+Autoscaling: if any case the server increasing or decresing depends on the workloads or user requests in organization use autosclaing.
+in that case we use autoscaling. Here autoscaling automatically increasing/decresing the instances-we attach LB to the ASG.
+
+>for Production servers, we are not directly do any modifications in ORG. we create AMI of PROD-instance, and attach into Launch Template  
+procedure: 
+> create AMI of Prd-server(********No-Reboot********) if we are click this all prod-server will stop and reboot, so "not check this"
+#goto console>>>>goto-instance>>>>goto-actions>>>>image-and-templates>>>>create-image
+> create launch template (here we have do all configurations, will not reconfigure this)
+> create Classic-LB and not add instances, it automatically generated from Autoscaling. 
