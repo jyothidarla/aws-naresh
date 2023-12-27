@@ -1,0 +1,8 @@
+27/12/2023
+create docker image push into ECR repo
+**ECS(Elastic Container Service):
+> it mainly used for production environments(Container Orchestartion Tool)
+> Managed by AWS, no need to worry about management.
+> K8s is morepowerfull. it supports fargate(serverless computing). This will use in OFFICE 365
+> goto ECS and create cluster, create taskdefinition file. and deploy and runatask. 
+
