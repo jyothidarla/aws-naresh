@@ -1,0 +1,28 @@
+Date: 26/12/2023
+1.Cloud Front: maintaining static data in cache servers. CDN. creating distributions in different Az. the user requests will not directly goto central servers, it first fetching from nearest edgelocations. 
+  > cost reduced
+  > low latency 
+  > less data transfering rate.
+  > high availability
+  > security
+  
+Practical: create s3 bucket static webhosting and this use as domain and create distribution. will get Distribution URL. it will work as edgelocation accessed over the internet. 
+
+2.VPC peering in diff region through windows:
+practical: create vpc with subnet2 in one region. create another and create only one private subnet.
+  > goto routes and associate.
+  > public ip has publicip
+  > vpc peering
+  > define peering routes in Editroutes
+  > Connect through RDP client
+
+3. Lambda Functions: lambda functions are supports serverless archetecture. it can be triggered with any other services in the AWS. main intesion of this is
+  > Security compliance: we can restrict the previleges and govern the ac through cloud watch alarms and notifications.
+  > Cost Optimization : find and remove stale resources
+
+  create a lambdafunction use functional URL for accesing external world.
+  Prctical:
+   usecase:
+   > create lambdafunction deploy and test. use FURL. 
+   > create lambdafunction copy paste gitcode from abhishek day17, attach customer policies(snapshot and instance). create EC2 create snapshot. deploy and run. 
+   > remove EC2 and run. automatically remove snaps
